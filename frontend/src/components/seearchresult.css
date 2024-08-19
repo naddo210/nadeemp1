@@ -1,0 +1,36 @@
+/* SearchResults.css */
+
+.search-results {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f8f8f8; /* Light background color for better contrast */
+  }
+  
+  .search-results .food-item {
+    width: calc(33.333% - 20px); /* Adjust width to fit 3 items per row with gap */
+    margin-bottom: 20px;
+  }
+  
+  .search-results .no-results {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+    margin-top: 20px;
+  }
+  
+  /* Optional: Add responsiveness for smaller screens */
+  @media (max-width: 768px) {
+    .search-results .food-item {
+      width: calc(50% - 20px); /* Adjust width for tablets */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .search-results .food-item {
+      width: 100%; /* Full width for mobile devices */
+    }
+  }
+  
